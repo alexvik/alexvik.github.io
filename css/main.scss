@@ -1,0 +1,56 @@
+@import "layout/fonts.scss";
+@import "layout/variables.scss";
+@import "layout/base.scss";
+
+@import "blocks/options.scss";
+@import "blocks/button.scss";
+@import "blocks/header.scss";
+@import "blocks/logo.scss";
+@import "blocks/menu.scss";
+@import "blocks/phone.scss";
+@import "blocks/hero.scss";
+// @import "blocks/button.scss";
+
+body {
+  font-family: 'Alegreya Sans', Arial, sans-serif;
+  font-size: 18px;
+  line-height: 1.42;
+  color: #666666;
+  background-color: white;
+  /* -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; */
+}
+
+.main-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  
+  background: url('../images/decor/leaf.png') right bottom no-repeat;
+  background-color: $blue;
+  color: white;
+
+  height: 100vh;
+  min-height: 650px;
+
+  position: relative;
+  
+  &::before {
+    content: url('../images/decor/little-leaf.png');
+    position: absolute;
+    bottom: -50px;
+    left: 2.5%;
+  }
+
+  &::after {
+    content: url('../images/decor/leafs-and-berries.png');
+    position: absolute;
+    bottom: -45px;
+    right: 1.5%;
+  }
+}
+
+.container {
+  width: 940px;
+  margin: 0 auto;
+}

@@ -1,0 +1,31 @@
+.options {
+  line-height: 1.2;
+}
+
+.options__list {
+  display: flex;
+  align-items: flex-start;
+
+  .options__list-item {
+    margin-right: 35px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+}
+
+.option {
+  display: flex;
+  align-items: flex-start;
+
+  .option__img {
+    width: 45px;
+    margin-right: 9px;
+  }
+  
+  .option__container {
+    font-size: 16px;
+    max-width: 85px;
+  }
+}
