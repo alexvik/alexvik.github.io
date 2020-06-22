@@ -1,1 +1,1 @@
-# alexvik.github.io
+# Alexey Vik Loftschool educational project.

@@ -1,0 +1,9 @@
+.section {
+  background-color: white;
+  color: #666666;
+  height: 100vh;
+  min-height: 650px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}

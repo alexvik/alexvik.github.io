@@ -1,0 +1,54 @@
+.why {
+  background: url('./../images/decor/side-leaf.png') left center no-repeat;
+  position: relative;
+
+  .why__header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .why__subtitle {
+      width: 45%;
+      text-align: center;
+    }
+  }
+
+  .why__list {
+    margin-top: 50px;
+    display: flex;
+
+    .why__list-item {
+      flex: 1;
+      padding: 0 3%;
+      position: relative;
+
+      &:first-child {
+        padding-left: 0;
+      }
+
+      &:last-child {
+        padding-right: 0;
+
+        &::after {
+          display: none;
+        }
+      }
+
+      &::after {
+        content: url('./../images/7.png');
+        position: absolute;
+        top: 52px;
+        right: 0;
+        transform: translateX(50%);
+      }
+    }
+  }
+
+  &::after {
+    content: url('./../images/decor/raspberry.png');
+    position: absolute;
+    bottom: -110px;
+    left: 0;
+    z-index: 10;
+  }
+}

@@ -9,6 +9,17 @@
 @import "blocks/menu.scss";
 @import "blocks/phone.scss";
 @import "blocks/hero.scss";
+@import "blocks/section.scss";
+@import "blocks/why.scss";
+@import "blocks/why-feature.scss";
+@import "blocks/reviews.scss";
+@import "blocks/avatar-list.scss";
+@import "blocks/avatar.scss";
+// @import "blocks/button.scss";
+// @import "blocks/button.scss";
+// @import "blocks/button.scss";
+// @import "blocks/button.scss";
+// @import "blocks/button.scss";
 // @import "blocks/button.scss";
 
 body {
@@ -53,4 +64,5 @@ body {
 .container {
   width: 940px;
   margin: 0 auto;
+  position: relative;
 }

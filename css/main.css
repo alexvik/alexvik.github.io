@@ -199,6 +199,205 @@ a {
   margin-bottom: 45px;
 }
 
+.section {
+  background-color: white;
+  color: #666666;
+  height: 100vh;
+  min-height: 650px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.section .section__title {
+  font-size: 48px;
+  font-weight: bold;
+  color: black;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.why {
+  background: url("./../images/decor/side-leaf.png") left center no-repeat;
+  position: relative;
+}
+.why .why__header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.why .why__header .why__subtitle {
+  width: 45%;
+  text-align: center;
+}
+.why .why__list {
+  margin-top: 50px;
+  display: flex;
+}
+.why .why__list .why__list-item {
+  flex: 1;
+  padding: 0 3%;
+  position: relative;
+}
+.why .why__list .why__list-item:first-child {
+  padding-left: 0;
+}
+.why .why__list .why__list-item:last-child {
+  padding-right: 0;
+}
+.why .why__list .why__list-item:last-child::after {
+  display: none;
+}
+.why .why__list .why__list-item::after {
+  content: url("./../images/7.png");
+  position: absolute;
+  top: 52px;
+  right: 0;
+  transform: translateX(50%);
+}
+.why::after {
+  content: url("./../images/decor/raspberry.png");
+  position: absolute;
+  bottom: -110px;
+  left: 0;
+  z-index: 10;
+}
+
+.why-feature {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.why-feature .why-feature__img-container {
+  background-color: #f2f5f4;
+  border-radius: 50%;
+  width: 126px;
+  height: 126px;
+  position: relative;
+}
+.why-feature .why-feature__img-container .why-feature__img {
+  width: 70px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+.why-feature .why-feature__title {
+  font-size: 27px;
+  font-weight: bold;
+  color: black;
+  margin-top: 27px;
+}
+.why-feature .why-feature__description {
+  text-align: center;
+  margin-top: 14px;
+}
+
+.reviews {
+  position: relative;
+}
+.reviews::after {
+  content: url("./../../images/decor/berries2.png");
+  position: absolute;
+  left: 4px;
+  bottom: -84px;
+}
+.reviews::before {
+  content: url("./../../images/decor/pattern.png");
+  position: absolute;
+  left: 0px;
+  bottom: -159px;
+}
+.reviews .reviews_decor {
+  position: absolute;
+  top: 36px;
+  right: 20px;
+}
+.reviews .reviews__content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 23px;
+}
+.reviews .review {
+  background: url("./../images/decor/berries.png") top right no-repeat;
+  background-color: #f8faf9;
+  display: flex;
+  padding: 50px 180px 35px 45px;
+  overflow: hidden;
+  position: relative;
+}
+.reviews .review::before {
+  content: "";
+  display: block;
+  width: 90px;
+  height: 90px;
+  background-color: white;
+  border-radius: 50%;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: -65px;
+}
+.reviews .review .review__img-container {
+  width: 254px;
+  height: 260px;
+  flex: 0 0 auto;
+  overflow: hidden;
+  margin-right: 20px;
+}
+.reviews .review .review__img-container .review__img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.reviews .review .review__content .review__title {
+  font-size: 30px;
+  font-weight: bold;
+  color: black;
+  margin-top: 10px;
+}
+.reviews .review .review__content .review__description {
+  margin-top: 18px;
+  line-height: 1.25;
+}
+.reviews .review .review__content .review__author {
+  color: black;
+  font-weight: 500;
+  margin-top: 26px;
+}
+
+.avatar-list {
+  display: flex;
+  margin-top: 23px;
+}
+
+.avatar {
+  width: 78px;
+  height: 78px;
+  border-radius: 50%;
+  background-color: transparent;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.avatar:hover, .avatar--active {
+  background-color: #0f5a47;
+}
+.avatar .avatar__link {
+  width: 66px;
+  height: 66px;
+  border-radius: 50%;
+  overflow: hidden;
+  display: block;
+}
+.avatar .avatar__link .avatar__img {
+  object-fit: cover;
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
 body {
   font-family: "Alegreya Sans", Arial, sans-serif;
   font-size: 18px;
@@ -236,4 +435,5 @@ body {
 .container {
   width: 940px;
   margin: 0 auto;
+  position: relative;
 }

@@ -1,0 +1,87 @@
+.reviews {
+  position: relative;
+
+  &::after {
+    content: url('./../../images/decor/berries2.png');
+    position: absolute;
+    left: 4px;
+    bottom: -84px;
+  }
+
+  &::before {
+    content: url('./../../images/decor/pattern.png');
+    position: absolute;
+    left: 0px;
+    bottom: -159px;
+  }
+
+  .reviews_decor {
+    position: absolute;
+    top: 36px;
+    right: 20px;
+  }
+
+  .reviews__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 23px;
+  }
+
+  .review {
+    background: url('./../images/decor/berries.png') top right no-repeat;
+    background-color: #f8faf9;
+    display: flex;
+    padding: 50px 180px 35px 45px;
+    overflow: hidden;
+    position: relative;
+
+    &::before {
+      content: "";
+      display: block;
+      width: 90px;
+      height: 90px;
+      background-color: white;
+      border-radius: 50%;
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+      top: -65px;
+    }
+
+    .review__img-container {
+      width: 254px;
+      height: 260px;
+      flex: 0 0 auto;
+      overflow: hidden;
+      margin-right: 20px;
+  
+      .review__img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+
+    .review__content {
+      .review__title {
+        font-size: 30px;
+        font-weight: bold;
+        color: black;
+        margin-top: 10px;
+      }
+
+      .review__description {
+        margin-top: 18px;
+        line-height: 1.25;
+      }
+
+      .review__author {
+        color: black;
+        font-weight: 500;
+        margin-top: 26px;
+      }
+    }
+  }
+}
