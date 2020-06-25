@@ -514,7 +514,7 @@ a {
 }
 
 .delivery {
-  background: url("./../../images/decor/form-pattern.png") center center no-repeat;
+  background: url("./../../images/decor/form-pattern.png") center center/cover no-repeat;
 }
 .delivery .delivery__content {
   margin-top: 20px;
