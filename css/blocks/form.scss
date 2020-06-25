@@ -1,0 +1,57 @@
+@mixin form__input-text {
+  padding: 18px 11px;
+  border: solid 3px transparent;
+  width: 100%;
+
+  &:focus {
+    border: solid 3px #dee2bd;
+    outline: none;
+  }
+}
+
+.form {
+  display: flex;
+  
+
+  .form__col {
+    flex: 1;
+    margin-right: 20px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+
+    .form__row {
+      display: flex;
+
+      .form__block {
+        flex: 1;
+        margin-top: 16px;
+        margin-right: 20px;
+        
+        &:last-child {
+          margin-right: 0;
+        }
+      }
+
+      .form__controls {
+        display: flex;
+        flex-wrap: wrap;
+      }
+
+      .form__buttons {
+        margin-top: 38px;
+      }
+    }
+  }
+
+  .form__input-text {
+    @include form__input-text;
+  }
+
+  .form__textarea {
+    @include form__input-text;
+    height: 180px;
+    resize: none;
+  }
+}

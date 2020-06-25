@@ -8,6 +8,16 @@
   border-radius: 100px;
 }
 
+.button--type--primary {
+  background-color: $darkGreen;
+  color: white;
+
+  &:hover {
+    background-color: white;
+    color: $darkGreen;
+  }
+}
+
 .button--type--secondary {
   background-color: white;
   color: $darkGreen;
@@ -15,5 +25,14 @@
   &:hover {
     background-color: $darkGreen;
     color: white;
+  }
+}
+
+.button--type--reset {
+  color: $darkGreen;
+  text-transform: none;
+
+  &:hover {
+    color: black;
   }
 }
