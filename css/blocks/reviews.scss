@@ -6,6 +6,7 @@
     position: absolute;
     left: 4px;
     bottom: -84px;
+    z-index: $z-decoration;
   }
 
   &::before {
@@ -13,12 +14,14 @@
     position: absolute;
     left: 0px;
     bottom: -159px;
+    z-index: $z-decoration;
   }
 
   .reviews_decor {
     position: absolute;
     top: 36px;
     right: 20px;
+    z-index: $z-decoration;
   }
 
   .reviews__content {

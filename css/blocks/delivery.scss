@@ -1,5 +1,22 @@
 .delivery {
   background: url('./../../images/decor/form-pattern.png') center center / cover no-repeat;
+  position: relative;
+
+  &::after {
+    content: url('./../../images/decor/blueberry.png');
+    position: absolute;
+    left: 1.8%;
+    bottom: 12%;
+    z-index: $z-decoration;
+  }
+
+  &::before {
+    content: url('./../../images/decor/delivery-leaf.png');
+    position: absolute;
+    right: 1%;
+    bottom: 12%;
+    z-index: $z-decoration;
+  }
 
   .delivery__content {
     margin-top: 20px;

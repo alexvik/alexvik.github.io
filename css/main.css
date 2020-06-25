@@ -323,17 +323,20 @@ a {
   position: absolute;
   left: 4px;
   bottom: -84px;
+  z-index: 10;
 }
 .reviews::before {
   content: url("./../../images/decor/pattern.png");
   position: absolute;
   left: 0px;
   bottom: -159px;
+  z-index: 10;
 }
 .reviews .reviews_decor {
   position: absolute;
   top: 36px;
   right: 20px;
+  z-index: 10;
 }
 .reviews .reviews__content {
   display: flex;
@@ -515,6 +518,21 @@ a {
 
 .delivery {
   background: url("./../../images/decor/form-pattern.png") center center/cover no-repeat;
+  position: relative;
+}
+.delivery::after {
+  content: url("./../../images/decor/blueberry.png");
+  position: absolute;
+  left: 1.8%;
+  bottom: 12%;
+  z-index: 10;
+}
+.delivery::before {
+  content: url("./../../images/decor/delivery-leaf.png");
+  position: absolute;
+  right: 1%;
+  bottom: 12%;
+  z-index: 10;
 }
 .delivery .delivery__content {
   margin-top: 20px;
