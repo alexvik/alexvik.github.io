@@ -528,6 +528,42 @@ a {
   margin-top: 10px;
 }
 
+.fixed-menu {
+  position: fixed;
+  top: 32%;
+  right: 4%;
+  z-index: 100;
+}
+.fixed-menu .fixed-menu__list-item {
+  margin-top: 5px;
+}
+.fixed-menu .fixed-menu__list-item:first-child {
+  margin-top: 0;
+}
+.fixed-menu .fixed-menu__list-item--active .fixed-menu__link {
+  border-color: white;
+}
+.fixed-menu .fixed-menu__link {
+  display: block;
+  width: 16px;
+  height: 16px;
+  border: solid 1px transparent;
+  border-radius: 50%;
+  position: relative;
+}
+.fixed-menu .fixed-menu__link::before {
+  content: "";
+  display: block;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background-color: white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
 body {
   font-family: "Alegreya Sans", Arial, sans-serif;
   font-size: 18px;
