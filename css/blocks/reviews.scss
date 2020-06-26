@@ -4,23 +4,23 @@
   &::after {
     content: url('./../../images/decor/berries2.png');
     position: absolute;
-    left: 4px;
-    bottom: -84px;
+    left: rem(4px);
+    bottom: rem(-84px);
     z-index: $z-decoration;
   }
 
   &::before {
     content: url('./../../images/decor/pattern.png');
     position: absolute;
-    left: 0px;
-    bottom: -159px;
+    left: rem(0px);
+    bottom: rem(-159px);
     z-index: $z-decoration;
   }
 
   .reviews_decor {
     position: absolute;
-    top: 36px;
-    right: 20px;
+    top: rem(36px);
+    right: rem(20px);
     z-index: $z-decoration;
   }
 
@@ -28,36 +28,36 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 23px;
+    margin-top: rem(23px);
   }
 
   .review {
     background: url('./../images/decor/berries.png') top right no-repeat;
     background-color: #f8faf9;
     display: flex;
-    padding: 50px 180px 35px 45px;
+    padding: rem(50px) rem(180px) rem(35px) rem(45px);
     overflow: hidden;
     position: relative;
 
     &::before {
       content: "";
       display: block;
-      width: 90px;
-      height: 90px;
+      width: rem(90px);
+      height: rem(90px);
       background-color: white;
       border-radius: 50%;
       position: absolute;
       left: 50%;
       transform: translateX(-50%);
-      top: -65px;
+      top: rem(-65px);
     }
 
     .review__img-container {
-      width: 254px;
-      height: 260px;
+      width: rem(254px);
+      height: rem(260px);
       flex: 0 0 auto;
       overflow: hidden;
-      margin-right: 20px;
+      margin-right: rem(20px);
   
       .review__img {
         display: block;
@@ -69,21 +69,21 @@
 
     .review__content {
       .review__title {
-        font-size: 30px;
+        font-size: rem(30px);
         font-weight: bold;
         color: black;
-        margin-top: 10px;
+        margin-top: rem(10px);
       }
 
       .review__description {
-        margin-top: 18px;
+        margin-top: rem(18px);
         line-height: 1.25;
       }
 
       .review__author {
         color: black;
         font-weight: 500;
-        margin-top: 26px;
+        margin-top: rem(26px);
       }
     }
   }

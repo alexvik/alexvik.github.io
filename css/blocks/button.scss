@@ -1,11 +1,11 @@
 .button {
   display: inline-block;
-  font-size: 19px;
+  font-size: rem(19px);
   font-weight: bold;
   line-height: 1;
   text-transform: uppercase;
-  padding: 18px 35px;
-  border-radius: 100px;
+  padding: rem(18px) rem(35px);
+  border-radius: rem(100px);
 }
 
 .button--type--primary {

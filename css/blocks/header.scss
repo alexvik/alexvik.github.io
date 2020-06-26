@@ -1,6 +1,6 @@
 .header {
-  padding-top: 24px;
-  padding-bottom: 24px;
+  padding-top: rem(24px);
+  padding-bottom: rem(24px);
 
   line-height: 1;
 }
@@ -12,5 +12,5 @@
 }
 
 .header__phone {
-  margin-top: -6px;
+  margin-top: rem(-6px);
 }

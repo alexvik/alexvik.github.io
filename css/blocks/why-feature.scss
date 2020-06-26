@@ -6,12 +6,12 @@
   .why-feature__img-container {
     background-color: #f2f5f4;
     border-radius: 50%;
-    width: 126px;
-    height: 126px;
+    width: rem(126px);
+    height: rem(126px);
     position: relative;
 
     .why-feature__img {
-      width: 70px;
+      width: rem(70px);
       position: absolute;
       left: 50%;
       top: 50%;
@@ -20,14 +20,14 @@
   }
 
   .why-feature__title {
-    font-size: 27px;
+    font-size: rem(27px);
     font-weight: bold;
     color: black;
-    margin-top: 27px;
+    margin-top: rem(27px);
   }
 
   .why-feature__description {
     text-align: center;
-    margin-top: 14px;
+    margin-top: rem(14px);
   }
 }

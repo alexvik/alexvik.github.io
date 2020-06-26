@@ -14,7 +14,7 @@
   }
 
   .why__list {
-    margin-top: 50px;
+    margin-top: rem(50px);
     display: flex;
 
     .why__list-item {
@@ -37,7 +37,7 @@
       &::after {
         content: url('./../images/7.png');
         position: absolute;
-        top: 52px;
+        top: rem(52px);
         right: 0;
         transform: translateX(50%);
       }
@@ -47,7 +47,7 @@
   &::after {
     content: url('./../images/decor/raspberry.png');
     position: absolute;
-    bottom: -110px;
+    bottom: rem(-110px);
     left: 0;
     z-index: $z-decoration;
   }

@@ -1,5 +1,6 @@
 @import "layout/fonts.scss";
 @import "layout/variables.scss";
+@import "layout/media.scss";
 @import "layout/base.scss";
 
 @import "blocks/options.scss";
@@ -22,9 +23,12 @@
 @import "blocks/fixed-menu.scss";
 // @import "blocks/button.scss";
 
+html {
+  font-size: $baseFontSize;
+}
+
 body {
   font-family: 'Alegreya Sans', Arial, sans-serif;
-  font-size: 18px;
   line-height: 1.42;
   color: #666666;
   background-color: white;
@@ -49,20 +53,21 @@ body {
   &::before {
     content: url('../images/decor/little-leaf.png');
     position: absolute;
-    bottom: -50px;
+    bottom: rem(-50px);
     left: 2.5%;
   }
 
   &::after {
     content: url('../images/decor/leafs-and-berries.png');
     position: absolute;
-    bottom: -45px;
+    bottom: rem(-45px);
     right: 1.5%;
   }
 }
 
 .container {
-  width: 940px;
+  width: 95%;
+  max-width: 940px;
   margin: 0 auto;
   position: relative;
 }

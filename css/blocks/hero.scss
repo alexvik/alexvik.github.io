@@ -10,28 +10,28 @@
   }
 
   .hero__content {
-    margin-top: 72px;
-    width: 350px;
+    margin-top: rem(72px);
+    width: rem(350px);
 
     .hero__title {
-      font-size: 48px;
+      font-size: rem(48px);
       font-weight: bold;
       text-transform: uppercase;
       line-height: 1.2;
     }
   
     .hero__description {
-      margin-top: 7px;
-      font-size: 21px;
+      margin-top: rem(7px);
+      font-size: rem(21px);
       line-height: 1.2;
     }
 
     .hero__button {
-      margin-top: 33px;
+      margin-top: rem(33px);
     }
   }
 
   .hero__additional {
-    margin-bottom: 45px;
+    margin-bottom: rem(45px);
   }
 }
