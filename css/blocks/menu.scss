@@ -1,10 +1,20 @@
+.menu {
+  @include tablets {
+    display: none;
+  }
+}
+
 .menu__list {
+  margin: rem(12px) rem(29px) 0 rem(29px);
   display: flex;
+  justify-content: center;
   align-items: center;
+  flex-wrap: wrap;
 }
 
 .menu__list-item {
   margin-right: rem(29px);
+  margin-bottom: 5px;
 
   &:last-child {
     margin-right: 0;
@@ -12,5 +22,6 @@
 
   .menu__link {
     text-decoration: none;
+    white-space: nowrap;
   }
 }

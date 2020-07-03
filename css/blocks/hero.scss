@@ -7,6 +7,12 @@
     flex-direction: column;
     justify-content: space-between;
     background: url('./../../images/decor/chocolates.png') right center / 50% auto no-repeat;
+
+    @include tablets {
+      background: none;
+      justify-content: center;
+      align-items: center;
+    }
   }
 
   .hero__content {
@@ -18,20 +24,43 @@
       font-weight: bold;
       text-transform: uppercase;
       line-height: 1.2;
+
+      @include tablets {
+        margin-top: rem(13px);
+      }
     }
   
     .hero__description {
       margin-top: rem(7px);
       font-size: rem(21px);
       line-height: 1.2;
+
+      @include tablets {
+        margin-top: rem(12px);
+        padding: 0 25%;
+      }
     }
 
     .hero__button {
       margin-top: rem(33px);
     }
+
+    @include tablets {
+      margin-top: 0;
+      width: 100%;
+      text-align: center;
+
+      &::before {
+        content: url('./../../images/decor/chocolates_768.png');
+      }
+    }
   }
 
   .hero__additional {
     margin-bottom: rem(45px);
+
+    @include tablets {
+      display: none;
+    }
   }
 }

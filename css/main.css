@@ -141,34 +141,50 @@ a {
 .header-container {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: flex-start;
 }
 
-.header__phone {
-  margin-top: -0.3333333333rem;
+.phone.header__phone {
+  margin-top: 0.1666666667rem;
+}
+@media screen and (max-width: 768px) {
+  .phone.header__phone {
+    display: none;
+  }
+}
+
+.hamburger-link.header__hamburger-link {
+  margin-top: 0.4444444444rem;
 }
 
 .logo {
   width: 2.9444444444rem;
 }
 
-.logo__img {
-  width: 100%;
+@media screen and (max-width: 768px) {
+  .menu {
+    display: none;
+  }
 }
 
 .menu__list {
+  margin: 0.6666666667rem 1.6111111111rem 0 1.6111111111rem;
   display: flex;
+  justify-content: center;
   align-items: center;
+  flex-wrap: wrap;
 }
 
 .menu__list-item {
   margin-right: 1.6111111111rem;
+  margin-bottom: 5px;
 }
 .menu__list-item:last-child {
   margin-right: 0;
 }
 .menu__list-item .menu__link {
   text-decoration: none;
+  white-space: nowrap;
 }
 
 .phone {
@@ -183,6 +199,9 @@ a {
   height: 0.6666666667rem;
   margin-right: 0.3333333333rem;
 }
+.phone .phone__text {
+  white-space: nowrap;
+}
 
 .hero {
   flex: 1;
@@ -194,6 +213,13 @@ a {
   justify-content: space-between;
   background: url("./../../images/decor/chocolates.png") right center/50% auto no-repeat;
 }
+@media screen and (max-width: 768px) {
+  .hero .hero__container {
+    background: none;
+    justify-content: center;
+    align-items: center;
+  }
+}
 .hero .hero__content {
   margin-top: 4rem;
   width: 19.4444444444rem;
@@ -204,16 +230,42 @@ a {
   text-transform: uppercase;
   line-height: 1.2;
 }
+@media screen and (max-width: 768px) {
+  .hero .hero__content .hero__title {
+    margin-top: 0.7222222222rem;
+  }
+}
 .hero .hero__content .hero__description {
   margin-top: 0.3888888889rem;
   font-size: 1.1666666667rem;
   line-height: 1.2;
 }
+@media screen and (max-width: 768px) {
+  .hero .hero__content .hero__description {
+    margin-top: 0.6666666667rem;
+    padding: 0 25%;
+  }
+}
 .hero .hero__content .hero__button {
   margin-top: 1.8333333333rem;
 }
+@media screen and (max-width: 768px) {
+  .hero .hero__content {
+    margin-top: 0;
+    width: 100%;
+    text-align: center;
+  }
+  .hero .hero__content::before {
+    content: url("./../../images/decor/chocolates_768.png");
+  }
+}
 .hero .hero__additional {
   margin-bottom: 2.5rem;
+}
+@media screen and (max-width: 768px) {
+  .hero .hero__additional {
+    display: none;
+  }
 }
 
 .section {
@@ -243,6 +295,11 @@ a {
   background: url("./../images/decor/side-leaf.png") left center no-repeat;
   position: relative;
 }
+@media screen and (max-width: 768px) {
+  .why {
+    background-position: left top 9%;
+  }
+}
 .why .why__header {
   display: flex;
   flex-direction: column;
@@ -251,6 +308,11 @@ a {
 .why .why__header .why__subtitle {
   width: 45%;
   text-align: center;
+}
+@media screen and (max-width: 768px) {
+  .why .why__header .why__subtitle {
+    width: 60%;
+  }
 }
 .why .why__list {
   margin-top: 2.7777777778rem;
@@ -276,6 +338,11 @@ a {
   top: 2.8888888889rem;
   right: 0;
   transform: translateX(50%);
+}
+@media screen and (max-width: 768px) {
+  .why .why__list .why__list-item::after {
+    display: none;
+  }
 }
 .why::after {
   content: url("./../images/decor/raspberry.png");
@@ -553,7 +620,7 @@ a {
   z-index: 100;
 }
 .fixed-menu .fixed-menu__list-item {
-  margin-top: 0.2777777778rem;
+  margin-top: 5px;
 }
 .fixed-menu .fixed-menu__list-item:first-child {
   margin-top: 0;
@@ -563,8 +630,8 @@ a {
 }
 .fixed-menu .fixed-menu__link {
   display: block;
-  width: 0.8888888889rem;
-  height: 0.8888888889rem;
+  width: 16px;
+  height: 16px;
   border: solid 1px transparent;
   border-radius: 50%;
   position: relative;
@@ -572,8 +639,8 @@ a {
 .fixed-menu .fixed-menu__link::before {
   content: "";
   display: block;
-  width: 0.3333333333rem;
-  height: 0.3333333333rem;
+  width: 6px;
+  height: 6px;
   border-radius: 50%;
   background-color: white;
   position: absolute;
@@ -582,8 +649,37 @@ a {
   transform: translate(-50%, -50%);
 }
 
+.hamburger-link {
+  width: 24px;
+  height: 22px;
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+}
+@media screen and (max-width: 768px) {
+  .hamburger-link {
+    display: inline-flex;
+  }
+}
+.hamburger-link__plank {
+  height: 4px;
+  display: block;
+  background: white;
+  border-radius: 10px;
+}
+
 html {
   font-size: 18px;
+}
+@media screen and (max-width: 768px) {
+  html {
+    font-size: 17px;
+  }
+}
+@media screen and (max-width: 480px) {
+  html {
+    font-size: 16px;
+  }
 }
 
 body {
@@ -617,6 +713,16 @@ body {
   position: absolute;
   bottom: -2.5rem;
   right: 1.5%;
+}
+@media screen and (max-width: 768px) {
+  .main-section::before, .main-section::after {
+    display: none;
+  }
+}
+@media screen and (max-width: 768px) {
+  .main-section {
+    background-position: right bottom 86%;
+  }
 }
 
 .container {

@@ -21,10 +21,22 @@
 @import "blocks/delivery.scss";
 @import "blocks/delivery-form.scss";
 @import "blocks/fixed-menu.scss";
+@import "blocks/hamburger-link.scss";
+// @import "blocks/button.scss";
+// @import "blocks/button.scss";
+// @import "blocks/button.scss";
 // @import "blocks/button.scss";
 
 html {
   font-size: $baseFontSize;
+
+  @include tablets {
+    font-size: $baseFontSize - 1px;
+  }
+
+  @include phones {
+    font-size: $baseFontSize - 2px;
+  }
 }
 
 body {
@@ -62,6 +74,16 @@ body {
     position: absolute;
     bottom: rem(-45px);
     right: 1.5%;
+  }
+
+  &::before, &::after {
+    @include tablets {
+      display: none;
+    }
+  }
+
+  @include tablets {
+    background-position: right bottom 86%;
   }
 }
 

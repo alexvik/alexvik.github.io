@@ -8,9 +8,17 @@
 .header-container {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: flex-start;
 }
 
-.header__phone {
-  margin-top: rem(-6px);
+.phone.header__phone {
+  margin-top: rem(3px);
+
+  @include tablets {
+    display: none;
+  }
+}
+
+.hamburger-link.header__hamburger-link {
+  margin-top: rem(8px);
 }
