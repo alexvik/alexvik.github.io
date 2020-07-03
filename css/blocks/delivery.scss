@@ -18,7 +18,18 @@
     z-index: $z-decoration;
   }
 
+  &::before, &::after {
+    @include tablets {
+      display: none;
+    }
+  }
+
   .delivery__content {
     margin-top: rem(20px);
+
+    @include tablets {
+      width: 64%;
+      margin: 0 auto;
+    }
   }
 }
