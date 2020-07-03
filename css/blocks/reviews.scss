@@ -52,12 +52,24 @@
       top: rem(-65px);
     }
 
+    @include tablets {
+      flex-direction: column;
+      align-items: center;
+      padding: rem(50px) rem(20px) rem(35px) rem(20px);
+    }
+
     .review__img-container {
       width: rem(254px);
       height: rem(260px);
       flex: 0 0 auto;
       overflow: hidden;
       margin-right: rem(20px);
+
+      @include tablets {
+        width: rem(130px);
+        height: rem(132.5px);
+        margin-right: 0;
+      }
   
       .review__img {
         display: block;
@@ -68,22 +80,36 @@
     }
 
     .review__content {
+      text-align: center;
+
       .review__title {
         font-size: rem(30px);
         font-weight: bold;
         color: black;
         margin-top: rem(10px);
+
+        @include tablets {
+          margin-top: rem(29px);
+        }
       }
 
       .review__description {
         margin-top: rem(18px);
         line-height: 1.25;
+
+        @include tablets {
+          margin-top: rem(13px);
+        }
       }
 
       .review__author {
         color: black;
         font-weight: 500;
         margin-top: rem(26px);
+
+        @include tablets {
+          margin-top: rem(19px);
+        }
       }
     }
   }

@@ -1,4 +1,14 @@
 .avatar-list {
   display: flex;
   margin-top: rem(23px);
+
+  @include tablets {
+    .avatar-list__list-item {
+      margin-right: 14px;
+  
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+  }
 }
