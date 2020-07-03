@@ -2,6 +2,10 @@
   background: url('./../images/decor/side-leaf.png') left center no-repeat;
   position: relative;
 
+  @include tablets {
+    background-position: left top 9%;
+  }
+
   .why__header {
     display: flex;
     flex-direction: column;
@@ -10,6 +14,10 @@
     .why__subtitle {
       width: 45%;
       text-align: center;
+
+      @include tablets {
+        width: 60%;
+      }
     }
   }
 
@@ -40,6 +48,10 @@
         top: rem(52px);
         right: 0;
         transform: translateX(50%);
+
+        @include tablets {
+          display: none;
+        }
       }
     }
   }
