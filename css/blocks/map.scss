@@ -1,0 +1,11 @@
+.map {
+  background: url('./../../images/map.jpg') center center / cover no-repeat;
+}
+
+.container.map__container {
+  height: 100%;
+
+  @include tablets {
+    width: 100%;
+  }
+}

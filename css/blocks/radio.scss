@@ -4,6 +4,10 @@
   user-select: none;
   margin-right: rem(20px);
 
+  @include tablets {
+    margin-top: rem(5px);
+  }
+
   &:last-child {
     margin-right: 0;
   }

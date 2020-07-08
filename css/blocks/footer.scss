@@ -1,0 +1,48 @@
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+  padding: rem(20px) rem(87px);
+  
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+
+  @include tablets {
+    padding: rem(20px) rem(25px);
+  }
+
+  @include phones {
+    flex-direction: column;
+  }
+}
+
+.footer__contacts {
+  font-style: normal;
+
+  @include phones {
+    text-align: center;
+  }
+}
+
+.footer__address {
+  font-size: 21px;
+  color: black;
+}
+
+.footer__phone {
+  font-size: 21px;
+  color: $green;
+
+  @include phones {
+    margin-top: 15px;
+  }
+}
+
+.footer__socials {
+  @include phones {
+    margin-top: 15px;
+  }
+}

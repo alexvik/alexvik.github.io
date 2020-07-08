@@ -191,7 +191,7 @@ a {
   font-size: 1.3333333333rem;
   text-decoration: none;
   line-height: 1.25;
-  display: flex;
+  display: inline-flex;
   align-items: center;
 }
 .phone .phone__img {
@@ -690,6 +690,11 @@ a {
           user-select: none;
   margin-right: 1.1111111111rem;
 }
+@media screen and (max-width: 768px) {
+  .radio {
+    margin-top: 0.2777777778rem;
+  }
+}
 .radio:last-child {
   margin-right: 0;
 }
@@ -767,9 +772,19 @@ a {
 .delivery-form__radio {
   margin-top: 1rem;
 }
+@media screen and (max-width: 768px) {
+  .delivery-form__radio {
+    margin-top: 0.7222222222rem;
+  }
+}
 
 .delivery-form__checkbox {
   margin-top: 0.5555555556rem;
+}
+@media screen and (max-width: 768px) {
+  .delivery-form__checkbox {
+    margin-top: 0.2777777778rem;
+  }
 }
 
 .fixed-menu {
@@ -825,6 +840,90 @@ a {
   display: block;
   background: white;
   border-radius: 10px;
+}
+
+.map {
+  background: url("./../../images/map.jpg") center center/cover no-repeat;
+}
+
+.container.map__container {
+  height: 100%;
+}
+@media screen and (max-width: 768px) {
+  .container.map__container {
+    width: 100%;
+  }
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+  padding: 1.1111111111rem 4.8333333333rem;
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+}
+@media screen and (max-width: 768px) {
+  .footer {
+    padding: 1.1111111111rem 1.3888888889rem;
+  }
+}
+@media screen and (max-width: 480px) {
+  .footer {
+    flex-direction: column;
+  }
+}
+
+.footer__contacts {
+  font-style: normal;
+}
+@media screen and (max-width: 480px) {
+  .footer__contacts {
+    text-align: center;
+  }
+}
+
+.footer__address {
+  font-size: 21px;
+  color: black;
+}
+
+.footer__phone {
+  font-size: 21px;
+  color: #365a49;
+}
+@media screen and (max-width: 480px) {
+  .footer__phone {
+    margin-top: 15px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .footer__socials {
+    margin-top: 15px;
+  }
+}
+
+.socials__list {
+  display: flex;
+  align-items: center;
+}
+.socials__list .socials__list-item {
+  margin-right: 1.1111111111rem;
+}
+.socials__list .socials__list-item:last-child {
+  margin-right: 0;
+}
+.socials__list .socials__link {
+  display: block;
+  width: 1.1111111111rem;
+  height: 1.1111111111rem;
+}
+.socials__list .socials__link .socials__img {
+  max-width: 100%;
 }
 
 html {
