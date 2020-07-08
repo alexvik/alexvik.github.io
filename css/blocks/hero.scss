@@ -19,6 +19,23 @@
     margin-top: rem(72px);
     width: rem(350px);
 
+    @include tablets {
+      margin-top: 0;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+
+      &::before {
+        content: "";
+        display: block;
+        width: rem(316px);
+        height: rem(330px);
+        background: url('./../../images/decor/chocolates_768.png') center center / contain no-repeat;
+      }
+    }
+
     .hero__title {
       font-size: rem(48px);
       font-weight: bold;
@@ -39,20 +56,14 @@
         margin-top: rem(12px);
         padding: 0 25%;
       }
+
+      @include phones {
+        padding: 0 15%;
+      }
     }
 
     .hero__button {
       margin-top: rem(33px);
-    }
-
-    @include tablets {
-      margin-top: 0;
-      width: 100%;
-      text-align: center;
-
-      &::before {
-        content: url('./../../images/decor/chocolates_768.png');
-      }
     }
   }
 

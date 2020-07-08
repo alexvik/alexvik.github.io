@@ -61,6 +61,10 @@ body {
   min-height: 650px;
 
   position: relative;
+
+  @include tablets {
+    background-position: right bottom 86%;
+  }
   
   &::before {
     content: url('../images/decor/little-leaf.png');
@@ -80,10 +84,6 @@ body {
     @include tablets {
       display: none;
     }
-  }
-
-  @include tablets {
-    background-position: right bottom 86%;
   }
 }
 
