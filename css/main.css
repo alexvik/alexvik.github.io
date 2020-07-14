@@ -88,6 +88,7 @@ a {
   align-items: flex-start;
 }
 .option .option__img {
+  fill: #c6f7ff;
   width: 2.5rem;
   margin-right: 0.5rem;
 }
@@ -197,6 +198,7 @@ a {
 .phone .phone__img {
   width: 0.6666666667rem;
   height: 0.6666666667rem;
+  fill: white;
   margin-right: 0.3333333333rem;
 }
 .phone .phone__text {
@@ -419,6 +421,7 @@ a {
   }
 }
 .why-feature .why-feature__img-container .why-feature__img {
+  fill: #2e2e2d;
   width: 3.8888888889rem;
   position: absolute;
   left: 50%;
@@ -692,7 +695,7 @@ a {
 }
 @media screen and (max-width: 768px) {
   .radio {
-    margin-top: 0.2777777778rem;
+    margin-top: 0.3888888889rem;
   }
 }
 .radio:last-child {
@@ -774,7 +777,7 @@ a {
 }
 @media screen and (max-width: 768px) {
   .delivery-form__radio {
-    margin-top: 0.7222222222rem;
+    margin-top: 0.6666666667rem;
   }
 }
 
@@ -783,7 +786,7 @@ a {
 }
 @media screen and (max-width: 768px) {
   .delivery-form__checkbox {
-    margin-top: 0.2777777778rem;
+    margin-top: 0.1666666667rem;
   }
 }
 
@@ -900,6 +903,9 @@ a {
     margin-top: 15px;
   }
 }
+.footer__phone .phone__img {
+  fill: #365a49;
+}
 
 @media screen and (max-width: 480px) {
   .footer__socials {
@@ -923,7 +929,13 @@ a {
   height: 1.1111111111rem;
 }
 .socials__list .socials__link .socials__img {
+  fill: #b3b3b3;
   max-width: 100%;
+  max-height: 100%;
+  transition: fill 0.3s;
+}
+.socials__list .socials__link .socials__img:hover {
+  fill: black;
 }
 
 html {

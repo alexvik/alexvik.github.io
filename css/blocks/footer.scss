@@ -39,6 +39,10 @@
   @include phones {
     margin-top: 15px;
   }
+
+  .phone__img {
+    fill: $green;
+  }
 }
 
 .footer__socials {
